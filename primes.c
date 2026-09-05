@@ -1,4 +1,4 @@
-/*
+/*30 de Agosto Matias Dejean
  * primes.c - Criba de Eratóstenes concurrente (Sieve of Eratosthenes)
  *
  * Cada primo encontrado se modela como un proceso ("filtro"). Cada filtro:

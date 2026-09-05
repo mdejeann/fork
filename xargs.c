@@ -1,18 +1,3 @@
-/*
- * xargs.c - versión simplificada de xargs(1)
- *
- * Lee argumentos línea a línea desde la entrada estándar (nunca separados
- * por espacios), los agrupa en lotes de a lo sumo NARGS argumentos, y por
- * cada lote ejecuta <comando> pasándole esos argumentos.
- *
- * El stream de entrada se asume potencialmente "infinito": en ningún
- * momento se almacenan más de NARGS argumentos en memoria a la vez, ya
- * que cada lote se ejecuta y se libera antes de leer el siguiente.
- *
- * No se usan pipes: la comunicación con el comando ejecutado es a través
- * de su entrada/salida heredadas normalmente. Tampoco se usa recursividad:
- * el procesamiento del stream es iterativo.
- */
 
 #define _GNU_SOURCE
 
